@@ -2,15 +2,71 @@
 <html lang="en" data-theme="cupcake">
 
 <head>
-    <meta charset="UTF-8" >
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
+    <!-- Font awesome code -->
+    <script src="https://kit.fontawesome.com/b5dd15abff.js" crossorigin="anonymous"></script>
+    <!-- tailwind css code -->
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font-lato">
+    <header class="max-w-screen-2xl mx-auto rounded-full   md:bg-[#F85559] md:my-12 ">
+        <div class="navbar justify-between md:px-12">
+            <div class="navbar-center hidden lg:flex  ">
+                <ul class="menu menu-horizontal  px-1 text-black md:text-white">
+                    <li><a>Home</a></li>
+                    <li><a>Abous Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-row-reverse gap-16">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn md:text-white  btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class=" h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] md:p-2 shadow md:bg-[#F85559] rounded-box w-52">
+                        <ul>
+                            <li><a>Home</a></li>
+                            <li><a>Abous Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img class="" src="./images/logo.png" alt="">
+                    <a class=" normal-case text-4xl font-extrabold text-black md:text-white text-center">Fruit Burst</a>
+                </div>
+            </div>
+            <div class="hidden md:inline lg:inline relative">
+                <input type="text" placeholder="Search here"
+                    class="border rounded-full py-2 md:pl-8 md:pr-4 focus:outline-none focus:ring focus:border-blue-300" />
+                <div class="absolute inset-y-0 right-0 flex items-center md:pr-3 pointer-events-none">
+                    <i class="fas fa-search text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
 
 </body>
 
